@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ article.title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    <p><em>{{ article.date }}</em></p>
+    <div>{{ article.content|safe }}</div>
+    <a href="/">Back to Home</a>
+</body>
+</html>

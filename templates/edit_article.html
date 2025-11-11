@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if article %}Update Article{% else %}New Article{% endif %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>{% if article %}Update Article{% else %}New Article{% endif %}</h1>
+    <form method="post">
+        <label>Article Title:<br><input type="text" name="title" value="{{ article.title if article else '' }}"></label><br>
+        <label>Publishing Date:<br><input type="date" name="date" value="{{ article.date if article else '' }}"></label><br>
+        <label>Content:<br><textarea name="content" rows="10" cols="50">{{ article.content if article else '' }}</textarea></label><br>
+        <button type="submit">{% if article %}Update{% else %}Publish{% endif %}</button>
+    </form>
+    <a href="/admin">Back to Dashboard</a>
+</body>
+</html>

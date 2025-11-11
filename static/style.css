@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background: #222;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px #0001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span {
+    color: #888;
+    font-size: 0.95em;
+    margin-left: 1em;
+}
+a {
+    color: #0074d9;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+a.add-btn {
+    background: #0074d9;
+    color: #fff;
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+    margin-left: 1em;
+    text-decoration: none;
+}
+form {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px #0001;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+input[type="text"], input[type="date"], input[type="password"], textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+button {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover, a.add-btn:hover {
+    background: #005fa3;
+}
+.error {
+    color: #c00;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Personal Blog (Admin)</h1>
+    <a href="/logout">Logout</a>
+    <a href="/admin/new" class="add-btn">+ Add</a>
+    <ul>
+        {% for article in articles %}
+        <li>{{ article.title }} <span>{{ article.date }}</span>
+            <a href="/admin/edit/{{ article.id }}">Edit</a>
+            <a href="/admin/delete/{{ article.id }}" onclick="return confirm('Delete this article?');">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
